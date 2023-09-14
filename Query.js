@@ -1,5 +1,6 @@
 //(QUES:1) Find all the information about each products??
-     db.products.find().toArray()
+     step1: db.products.insertMany({})
+     step2: db.products.find().toArray()
 
 //(QUES:2) Find the product price which are between 400 to 800??
      db.products.find({product_price:{$gt:400,$lt:800}}).sort({product_price:1})
